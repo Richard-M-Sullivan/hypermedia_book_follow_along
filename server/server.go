@@ -21,5 +21,6 @@ func StartServer() {
 }
 
 func helloHandler(w http.ResponseWriter, req *http.Request) {
+	fmt.Println(req.URL)
 	io.WriteString(w, "Hello, World\n")
 }
