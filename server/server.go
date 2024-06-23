@@ -8,7 +8,7 @@ import (
 )
 
 func PrintServer() {
-	fmt.Println("server package imported")
+	fmt.Println("Server started!")
 }
 
 func StartServer() {
@@ -16,6 +16,7 @@ func StartServer() {
 	http.HandleFunc("/", helloHandler)
 
 	// log that the server stopped when this exits
+	PrintServer()
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
