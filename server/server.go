@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func PrintServer() {
+func printServer() {
 	fmt.Println("Server started!")
 }
 
@@ -16,7 +16,7 @@ func StartServer() {
 	http.HandleFunc("/", helloHandler)
 
 	// log that the server stopped when this exits
-	PrintServer()
+	printServer()
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 

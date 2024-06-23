@@ -8,5 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Starting Server...")
+
 	server.StartServer()
 }
